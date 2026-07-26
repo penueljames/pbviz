@@ -1,0 +1,95 @@
+{
+    "dataRoles": [
+        {
+            "displayName": "Markdown Column",
+            "name": "markdownContent",
+            "kind": "Grouping"
+        },
+        {
+            "displayName": "Markdown Measure",
+            "name": "markdownMeasure",
+            "kind": "Measure"
+        }
+    ],
+    "objects": {
+        "markdownSettings": {
+            "displayName": "Markdown Formatting",
+            "properties": {
+                "fontSize": {
+                    "displayName": "Font Size (pt)",
+                    "type": {
+                        "formatting": {
+                            "fontSize": true
+                        }
+                    }
+                },
+                "fontColor": {
+                    "displayName": "Font Color",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "backgroundColor": {
+                    "displayName": "Background Color",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "padding": {
+                    "displayName": "Padding (px)",
+                    "type": {
+                        "integer": true
+                    }
+                },
+                "enableSanitize": {
+                    "displayName": "Sanitize HTML",
+                    "type": {
+                        "bool": true
+                    }
+                }
+            }
+        }
+    },
+    "dataViewMappings": [
+        {
+            "conditions": [
+                {
+                    "markdownContent": {
+                        "max": 1
+                    },
+                    "markdownMeasure": {
+                        "max": 1
+                    }
+                }
+            ],
+            "categorical": {
+                "categories": {
+                    "for": {
+                        "in": "markdownContent"
+                    },
+                    "dataReductionAlgorithm": {
+                        "top": {}
+                    }
+                },
+                "values": {
+                    "select": [
+                        {
+                            "bind": {
+                                "to": "markdownMeasure"
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "privileges": []
+}
