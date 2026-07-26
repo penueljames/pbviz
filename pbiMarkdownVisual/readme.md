@@ -102,4 +102,10 @@ pbiviz package
 
 ---
 
+## 🏷️ Search Keywords & Tags
+
+`powerbi-custom-visual` `powerbi-markdown-visual` `pbviz` `markdown-rendering-powerbi` `powerbi-markdown` `dax-markdown` `powerbi-visual` `markdown-to-html` `powerbi-text-visual`
+
+---
+
 *Built with ❤️ using TypeScript, marked, DOMPurify, Power BI Visuals CLI, and Gemini 3.6 Flash.*

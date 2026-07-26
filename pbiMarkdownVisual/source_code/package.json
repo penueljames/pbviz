@@ -1,10 +1,21 @@
 {
-  "name": "visual",
-  "description": "default_template_value",
-  "version": "1.0.0.0",
+  "name": "pbiMarkdownVisual",
+  "description": "Power BI Custom Visual (.pbviz) for rendering Markdown text and dynamic DAX measures in Power BI reports.",
+  "version": "1.0.4.0",
+  "keywords": [
+    "powerbi",
+    "powerbi-visual",
+    "powerbi-custom-visual",
+    "pbviz",
+    "markdown",
+    "dax",
+    "markdown-rendering",
+    "dompurify",
+    "marked"
+  ],
   "repository": {
-    "type": "default_template_value",
-    "url": "default_template_value"
+    "type": "git",
+    "url": "https://github.com/penueljames/pbviz.git"
   },
   "license": "MIT",
   "scripts": {

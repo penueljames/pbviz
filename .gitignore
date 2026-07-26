@@ -7,5 +7,3 @@ pbiviz-certs/
 *.key
 *.pfx
 webpack.statistics.prod.html
-source_code/node_modules/
-source_code/
