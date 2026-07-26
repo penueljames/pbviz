@@ -1,0 +1,198 @@
+/* Power BI Markdown Visual Stylesheet */
+
+.markdown-visual-container {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    overflow-y: auto;
+    overflow-x: auto;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    line-height: 1.6;
+    color: #24292f;
+    word-wrap: break-word;
+
+    /* Custom Scrollbar */
+    &::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+    }
+    &::-webkit-scrollbar-track {
+        background: rgba(0, 0, 0, 0.03);
+        border-radius: 4px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: rgba(0, 0, 0, 0.18);
+        border-radius: 4px;
+        &:hover {
+            background: rgba(0, 0, 0, 0.3);
+        }
+    }
+
+    /* Headings */
+    h1, h2, h3, h4, h5, h6 {
+        margin-top: 1.2em;
+        margin-bottom: 0.6em;
+        font-weight: 600;
+        line-height: 1.25;
+        color: inherit;
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+
+    h1 {
+        font-size: 2em;
+        padding-bottom: 0.3em;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+        font-size: 1.5em;
+        padding-bottom: 0.3em;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    }
+
+    h3 { font-size: 1.25em; }
+    h4 { font-size: 1em; }
+    h5 { font-size: 0.875em; }
+    h6 { font-size: 0.85em; color: #57606a; }
+
+    /* Paragraphs and Lists */
+    p {
+        margin-top: 0;
+        margin-bottom: 1em;
+    }
+
+    ul, ol {
+        margin-top: 0;
+        margin-bottom: 1em;
+        padding-left: 2em;
+        li {
+            margin-bottom: 0.3em;
+        }
+    }
+
+    /* Blockquotes */
+    blockquote {
+        margin: 0 0 1em 0;
+        padding: 0.6em 1em;
+        color: #57606a;
+        border-left: 4px solid #0969da;
+        background: rgba(9, 105, 218, 0.04);
+        border-radius: 0 6px 6px 0;
+        p:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    /* Code Blocks and Inline Code */
+    code {
+        font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+        font-size: 0.9em;
+        padding: 0.2em 0.4em;
+        margin: 0;
+        background-color: rgba(175, 184, 193, 0.2);
+        border-radius: 6px;
+    }
+
+    pre {
+        margin-top: 0;
+        margin-bottom: 1em;
+        padding: 14px 16px;
+        overflow: auto;
+        font-size: 0.88em;
+        line-height: 1.45;
+        background-color: #1e1e1e;
+        color: #d4d4d4;
+        border-radius: 8px;
+        box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+
+        code {
+            padding: 0;
+            margin: 0;
+            background-color: transparent;
+            border-radius: 0;
+            color: inherit;
+        }
+    }
+
+    /* Tables */
+    table {
+        border-spacing: 0;
+        border-collapse: collapse;
+        margin-top: 0;
+        margin-bottom: 1em;
+        width: 100%;
+        overflow: auto;
+
+        th, td {
+            padding: 8px 14px;
+            border: 1px solid rgba(0, 0, 0, 0.12);
+            text-align: left;
+        }
+
+        th {
+            font-weight: 600;
+            background-color: rgba(0, 0, 0, 0.04);
+        }
+
+        tr:nth-child(even) {
+            background-color: rgba(0, 0, 0, 0.02);
+        }
+    }
+
+    /* Links */
+    a {
+        color: #0969da;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    /* Horizontal Rule */
+    hr {
+        height: 0.25em;
+        padding: 0;
+        margin: 1.5em 0;
+        background-color: rgba(0, 0, 0, 0.1);
+        border: 0;
+    }
+
+    /* Images */
+    img {
+        max-width: 100%;
+        box-sizing: content-box;
+        border-radius: 6px;
+    }
+
+    /* Task Lists */
+    .task-list-item {
+        list-style-type: none;
+        input[type="checkbox"] {
+            margin-right: 0.5em;
+        }
+    }
+
+    /* Fallback / Welcome Banner */
+    .markdown-welcome-card {
+        padding: 16px;
+        background: linear-gradient(135deg, rgba(9, 105, 218, 0.05) 0%, rgba(137, 87, 229, 0.05) 100%);
+        border: 1px solid rgba(9, 105, 218, 0.2);
+        border-radius: 10px;
+        margin-bottom: 1em;
+
+        .welcome-badge {
+            display: inline-block;
+            background: #0969da;
+            color: #ffffff;
+            font-size: 0.75em;
+            font-weight: 600;
+            padding: 3px 8px;
+            border-radius: 12px;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+    }
+}
