@@ -40,14 +40,14 @@ Visual details, versioning, GUID, and author metadata in Power BI Desktop:
 - **DAX Measure Integration**: Generate dynamic executive narratives per region, user, or slicer selection.
 - **Enterprise Security**: HTML output is automatically sanitized using **`DOMPurify`** to adhere to Power BI sandboxed iframe security policies.
 - **Formatting Pane Controls**: Configure Font Size, Text Color, Background Color, Padding, and toggle HTML sanitization.
-- **Standalone Test Harness**: Includes an interactive `preview.html` file to test live typing in any web browser.
+- **Standalone Test Harness**: Includes an interactive `preview.html` file inside `source_code/` to test live typing in any web browser.
 
 ---
 
 ## 🚀 Quick Start Guide
 
 ### How to Import into Power BI Desktop
-1. Download **`pbiMarkdownVisual.pbiviz`** from the repository.
+1. Download **`pbiMarkdownVisual.pbiviz`** from the `visual/` directory in this repository.
 2. Open **Power BI Desktop**.
 3. In the **Visualizations** pane (right side), click **`...` (Get more visuals)** -> **Import a visual from a file**.
 4. Select **`pbiMarkdownVisual.pbiviz`**.
@@ -76,27 +76,32 @@ This project was engineered through **Vibe Coding** with an AI Pair Programmer.
 
 ### Directory Overview
 ```
-├── capabilities.json      # Data roles (Grouping/Measure) & format pane properties
-├── pbiviz.json            # Visual metadata, versioning, and author info
-├── src/
-│   ├── visual.ts          # Core rendering engine (marked + DOMPurify)
-│   └── settings.ts        # Power BI formatting pane card definitions
-├── style/
-│   └── visual.less        # GitHub-flavored Markdown stylesheet
-├── ref_images/            # Reference screenshots & overview images
-├── preview.html           # Standalone browser test harness
-└── sample_data.csv        # Sample dataset for testing
+pbiMarkdownVisual/
+├── 📁 ref_images/            # Reference screenshots & overview images
+├── 📁 sample_data/           # Sample CSV & Markdown test datasets
+├── 📁 visual/                # Distributable .pbviz visual bundle
+└── 📁 source_code/           # Core visual source code
+    ├── capabilities.json     # Data roles & formatting schema
+    ├── pbiviz.json           # Visual metadata, GUID, version, and author info
+    ├── package.json          # NPM dependencies & scripts
+    ├── tsconfig.json         # TypeScript compiler configuration
+    ├── assets/               # HD icon.png asset
+    ├── src/                  # visual.ts & settings.ts
+    └── style/                # visual.less stylesheet
 ```
 
 ### Build Commands (Conda `pviz` Environment)
 ```bash
-# Activate environment
+# 1. Activate conda environment
 conda activate pviz
 
-# Start local Power BI developer server (localhost:8080)
+# 2. Navigate into source_code directory
+cd source_code
+
+# 3. Start local Power BI developer server (localhost:8080)
 pbiviz start
 
-# Package production visual (.pbviz)
+# 4. Package production visual (.pbviz)
 pbiviz package
 ```
 
