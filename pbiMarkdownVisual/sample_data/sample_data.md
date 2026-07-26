@@ -1,0 +1,47 @@
+# 📈 Q1 Executive Performance Report
+
+> **Executive Summary:** Q1 enterprise revenue reached **$6.22M**, surpassing our quarterly forecast of **$5.40M** by **+15.2%**. Operating margins improved across all three geographic theaters due to accelerated cloud migration and strong expansion in key accounts.
+
+---
+
+## 📊 Regional Performance Breakdown
+
+| Region | Target Goal | Actual Revenue | YoY Growth | Fulfillment | Status |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| **North America** | $2.40M | **$2.85M** | +18.7% | 118.8% | 🟢 Exceeded |
+| **EMEA** | $1.80M | **$1.92M** | +6.6% | 106.7% | 🟢 Exceeded |
+| **APAC** | $1.20M | **$1.45M** | +20.8% | 120.8% | 🟢 Exceeded |
+| **Total Global** | **$5.40M** | **$6.22M** | **+15.2%** | **115.2%** | 🚀 Record Quarter |
+
+---
+
+## 🎯 Key Strategic Milestones
+
+- [x] **Cloud Migration**: Successfully transitioned core data warehouses to Azure Synapse.
+- [x] **Reporting Enhancement**: Integrated custom Power BI Markdown visual for dynamic C-suite commentary.
+- [x] **Sales Force Enablement**: Trained 140+ enterprise account managers on automated DAX narratives.
+- [ ] **Q2 Territory Expansion**: Finalize partner channel agreements for LATAM rollout by May 15.
+
+---
+
+## 💡 Dynamic DAX Narrative Measure
+
+Use the following DAX formula in Power BI to auto-generate markdown text per region or category:
+
+```dax
+MarkdownNarrative = 
+VAR CurrentRegion = SELECTEDVALUE(Region[Name], "Global Overview")
+VAR TotalSales = SUM(Sales[Amount])
+VAR TargetSales = SUM(Sales[Target])
+VAR VariancePct = DIVIDE(TotalSales - TargetSales, TargetSales, 0)
+RETURN
+    "# Regional Highlight: " & CurrentRegion & " \n\n" &
+    "Total Sales: **" & FORMAT(TotalSales, "$#,##0") & "** \n" &
+    "Target: " & FORMAT(TargetSales, "$#,##0") & " (" & FORMAT(VariancePct, "+0.0%") & ") \n\n" &
+    "Status: " & IF(TotalSales >= TargetSales, "✅ Target Exceeded", "⚠️ Requires Attention")
+```
+
+---
+
+## 🔒 Security & Data Compliance Note
+All rendered Markdown content is automatically sanitized via **DOMPurify** to adhere to enterprise Power BI iframe security policies.
