@@ -133,7 +133,7 @@ export class Visual implements IVisual {
 <div class="markdown-welcome-card">
   <span class="welcome-badge">Power BI Markdown Visual</span>
   <h3 style="margin-top:4px;">Markdown Preview & Instructions</h3>
-  <p>To render your own content, drag a text column to <strong>Markdown Column</strong> or a measure to <strong>Markdown Measure</strong>.</p>
+  <p>To render your own content, drag a text column or DAX measure to <strong>Markdown Content</strong>.</p>
 </div>
 
 # Markdown Features Supported

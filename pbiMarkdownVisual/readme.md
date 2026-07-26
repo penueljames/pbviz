@@ -40,7 +40,7 @@ The visual renders headers, blockquotes, metric tables with color indicators, DA
 2. Open **Power BI Desktop**.
 3. In the **Visualizations** pane (right side), click **`...` (Get more visuals)** -> **Import a visual from a file**.
 4. Select **`pbiMarkdownVisual.pbiviz`**.
-5. Drag your dataset text column to **`Markdown Column`** or DAX measure to **`Markdown Measure`**.
+5. Drag your dataset text column or DAX measure into the single **`Markdown Content`** fieldwell.
 
 ---
 
