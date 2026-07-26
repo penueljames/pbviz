@@ -1,23 +1,36 @@
 # 📊 Power BI Custom Markdown Visual (`.pbviz`)
 
-Welcome to the **Power BI Markdown Visual**  This custom visual converts raw Markdown strings—from dataset columns or dynamic DAX measures—into formatted, sanitized HTML inside Power BI reports.
+Welcome to the **Power BI Markdown Visual**! This custom visual converts raw Markdown strings—from dataset columns or dynamic DAX measures—into formatted, sanitized HTML inside Power BI reports.
 
 ---
 
-## 📸 Screenshots & Live Preview
+## 📸 Visual Screenshots & Overview
 
-### 1. Data Model View (Dataset Columns & Measures)
+### 1. General Introduction & Overview
+Overview of the custom visual rendering dynamic Markdown narratives directly inside Power BI report pages:
+
+![General Introduction Overview](ref_images/general_intro.png)
+
+---
+
+### 2. Data Model View (Dataset Columns & Measures)
 Raw Markdown text stored in dataset columns or generated dynamically via DAX formulas:
 
 ![Raw Data Model](ref_images/raw_data.png)
 
 ---
 
-### 2. Report Canvas View (Rendered Markdown Visual)
+### 3. Report Canvas View (Rendered Markdown Visual)
 The visual renders headers, blockquotes, metric tables with color indicators, DAX code blocks, and task checklists:
 
 ![Rendered Custom Markdown Visual](ref_images/custom_visual_out.png)
 
+---
+
+### 4. Visual Metadata & Publisher Info
+Visual details, versioning, GUID, and author metadata in Power BI Desktop:
+
+![Visual Metadata and About Details](ref_images/visual_about.png)
 
 ---
 
@@ -41,7 +54,6 @@ The visual renders headers, blockquotes, metric tables with color indicators, DA
 5. Drag your dataset text column or DAX measure into the single **`Markdown Content`** fieldwell.
 
 ---
-
 
 ## 🤖 Vibe Coding & AI Collaboration Report
 
@@ -71,7 +83,7 @@ This project was engineered through **Vibe Coding** with an AI Pair Programmer.
 │   └── settings.ts        # Power BI formatting pane card definitions
 ├── style/
 │   └── visual.less        # GitHub-flavored Markdown stylesheet
-├── assets/                # Screenshots and visual icons
+├── ref_images/            # Reference screenshots & overview images
 ├── preview.html           # Standalone browser test harness
 └── sample_data.csv        # Sample dataset for testing
 ```
@@ -90,4 +102,4 @@ pbiviz package
 
 ---
 
-*Built with  using TypeScript, marked, DOMPurify, Power BI Visuals CLI, and Gemini 3.6 Flash.*
+*Built with ❤️ using TypeScript, marked, DOMPurify, Power BI Visuals CLI, and Gemini 3.6 Flash.*
