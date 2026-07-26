@@ -1,6 +1,6 @@
 # 📊 Power BI Custom Markdown Visual (`.pbviz`)
 
-Welcome to the **Power BI Markdown Visual** GitHub Wiki! This custom visual converts raw Markdown strings—from dataset columns or dynamic DAX measures—into formatted, sanitized HTML inside Power BI reports.
+Welcome to the **Power BI Markdown Visual**  This custom visual converts raw Markdown strings—from dataset columns or dynamic DAX measures—into formatted, sanitized HTML inside Power BI reports.
 
 ---
 
