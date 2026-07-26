@@ -1,5 +1,7 @@
 # 📊 Power BI Custom Markdown Visual (`.pbviz`)
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 Welcome to the **Power BI Markdown Visual**! This custom visual converts raw Markdown strings—from dataset columns or dynamic DAX measures—into formatted, sanitized HTML inside Power BI reports.
 
 ---
@@ -110,6 +112,10 @@ pbiviz package
 ## 🏷️ Search Keywords & Tags
 
 `powerbi-custom-visual` `powerbi-markdown-visual` `pbviz` `markdown-rendering-powerbi` `powerbi-markdown` `dax-markdown` `powerbi-visual` `markdown-to-html` `powerbi-text-visual`
+
+## ⚖️ License
+
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
 
 ---
 
