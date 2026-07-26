@@ -9,16 +9,14 @@ Welcome to the **Power BI Markdown Visual**  This custom visual converts raw Mar
 ### 1. Data Model View (Dataset Columns & Measures)
 Raw Markdown text stored in dataset columns or generated dynamically via DAX formulas:
 
-
-<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/e65db822-c137-438d-b06f-bf6cccb913ab" />
-
+![Raw Data Model](ref_images/raw_data.png)
 
 ---
 
 ### 2. Report Canvas View (Rendered Markdown Visual)
 The visual renders headers, blockquotes, metric tables with color indicators, DAX code blocks, and task checklists:
 
-<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/37e73b19-91ec-43b7-a8c4-8688052bc02c" />
+![Rendered Custom Markdown Visual](ref_images/custom_visual_out.png)
 
 
 ---
