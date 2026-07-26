@@ -1,14 +1,10 @@
 {
     "dataRoles": [
         {
-            "displayName": "Markdown Column",
+            "displayName": "Markdown Content",
             "name": "markdownContent",
-            "kind": "Grouping"
-        },
-        {
-            "displayName": "Markdown Measure",
-            "name": "markdownMeasure",
-            "kind": "Measure"
+            "kind": "GroupingOrMeasure",
+            "description": "Drag a single text column or DAX measure containing Markdown text here"
         }
     ],
     "objects": {
@@ -64,12 +60,12 @@
                 {
                     "markdownContent": {
                         "max": 1
-                    },
-                    "markdownMeasure": {
-                        "max": 1
                     }
                 }
             ],
+            "single": {
+                "role": "markdownContent"
+            },
             "categorical": {
                 "categories": {
                     "for": {
@@ -83,7 +79,7 @@
                     "select": [
                         {
                             "bind": {
-                                "to": "markdownMeasure"
+                                "to": "markdownContent"
                             }
                         }
                     ]
